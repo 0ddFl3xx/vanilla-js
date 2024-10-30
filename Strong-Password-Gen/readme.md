@@ -41,8 +41,8 @@ A vanilla JavaScript project that generates strong passwords, using cryptographi
 - No predictable character positioning
 - Implements proper handling of required character types
 
-👉 **Additional Stuff**: Modern async/await clipboard handling
-
+👉 **Additional Stuff**: 
+- Modern async/await clipboard handling
 - Better error handling
 - More maintainable character set definitions
 - Input validation
