@@ -17,7 +17,7 @@ A vanilla JavaScript project that generates strong passwords, using cryptographi
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- HTMl 5
+- HTML 5
 - TailwindCSS
 - Vanilla JavaScript
 
