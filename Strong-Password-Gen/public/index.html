@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <meta name="description" content="A strong JS Password Generator" />
+    <link rel="icon" href="./favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <!-- Credit Tag -->
+    <div class="bottom-0 fixed py-4 w-full z-10 text-center">
+      <p class="">
+        &copy; <span id="year"></span> — made by 0dd
+      </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
+      <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+        Password Generator
+      </h1>
+
+      <!-- Password Display -->
+      <div class="relative mb-6">
+        <div
+          id="result"
+          class="w-full p-4 bg-gray-50 rounded border text-lg font-mono break-all min-h-[60px] flex items-center justify-between gap-4">
+          <span class="text-gray-600 capitalize">Get your password here😉</span>
+        </div>
+        <button
+          id="clipboard"
+          class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Settings -->
+      <div class="space-y-4 mb-6">
+        <!-- Password Length -->
+        <div class="flex flex-col gap-2">
+          <label class="flex justify-between text-sm font-medium text-gray-700">
+            Password Length
+            <span id="lengthValue" class="text-gray-500">16</span>
+          </label>
+          <input
+            type="range"
+            id="length"
+            min="8"
+            max="32"
+            value="16"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600" />
+        </div>
+
+        <!-- Character Types -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <input
+              type="checkbox"
+              id="uppercase"
+              checked
+              class="w-4 h-4 text-blue-600 rounded" />
+            <label for="uppercase" class="text-sm font-medium text-gray-700"
+              >Include Uppercase</label
+            >
+          </div>
+
+          <div class="flex items-center gap-3">
+            <input
+              type="checkbox"
+              id="lowercase"
+              checked
+              class="w-4 h-4 text-blue-600 rounded" />
+            <label for="lowercase" class="text-sm font-medium text-gray-700"
+              >Include Lowercase</label
+            >
+          </div>
+
+          <div class="flex items-center gap-3">
+            <input
+              type="checkbox"
+              id="numbers"
+              checked
+              class="w-4 h-4 text-blue-600 rounded" />
+            <label for="numbers" class="text-sm font-medium text-gray-700"
+              >Include Numbers</label
+            >
+          </div>
+
+          <div class="flex items-center gap-3">
+            <input
+              type="checkbox"
+              id="symbols"
+              checked
+              class="w-4 h-4 text-blue-600 rounded" />
+            <label for="symbols" class="text-sm font-medium text-gray-700"
+              >Include Symbols</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Generate Button & View Source Code on Github -->
+      <div class="flex flex-col">
+        <button
+          id="generate"
+          class="w-full bg-blue-600 text-white py-3 mb-4 px-4 rounded-full font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          Generate Password
+        </button>
+        <a
+          href="#"
+          class="w-full text-center border border-blue-600 text-blue-600 py-3 px-4 rounded-full font-medium hover:bg-blue-900 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          View Source Code (Github)
+        </a>
+      </div>
+    </div>
+
+    <script src="./js/passwordGen.js"></script>
+    <!-- dynamic year -->
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
