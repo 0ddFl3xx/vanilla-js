@@ -8,8 +8,11 @@
   </div>
 
 <h3 align="center">Strong Password Generator (Vanilla Js)</h3>
+
 <div align="center">
-<a href="https://strong-password-gen.web.app/">🌐View live demo🌐</a>
+  <a href="https://strong-password-gen.web.app/">🌐View live demo🌐</a>
+</div>
+
 </div>
 
 ## <a name="introduction">🤖 Introduction</a>
