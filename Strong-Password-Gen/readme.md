@@ -8,7 +8,8 @@
   </div>
 
 <h3 align="center">Strong Password Generator (Vanilla Js)</h3>
-  
+<div align="center">
+<a href="https://strong-password-gen.web.app/">🌐View live demo🌐</a>
 </div>
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -41,7 +42,8 @@ A vanilla JavaScript project that generates strong passwords, using cryptographi
 - No predictable character positioning
 - Implements proper handling of required character types
 
-👉 **Additional Stuff**: 
+👉 **Additional Stuff**:
+
 - Modern async/await clipboard handling
 - Better error handling
 - More maintainable character set definitions
